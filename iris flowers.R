@@ -1,0 +1,7 @@
+data("iris")
+mean_values <- aggregate(. ~ Species, data = iris, FUN = mean)
+sd_values <- aggregate(. ~ Species, data = iris, FUN = sd)
+print("Mean values grouped by Species:")
+print(mean_values)
+print("Standard Deviation values grouped by Species:")
+print(sd_values)
